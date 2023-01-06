@@ -1,168 +1,199 @@
-body{
-   padding: 20px 0px;
-   background-size: cover;
-   background-repeat: no-repeat;
-   font-family: Baskerville;
-   color: #323135;
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
 
+html{
+font-family: "SF Pro Display";
 }
-p{
-	text-align: center;
-	font-weight: bold ;
-}
-#MainWindow{
-	width: 900px;
-	height: 1200px;
-	background-color:#F9F6EE;
-	border-radius: 10px;
-	margin: auto;
-	box-shadow: 10px 10px #E7E7E7;
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	width: 100%;
+	height: 250%;
+	color:#f5f5f7;
+	overflow-y: scroll;
+	
+
 }
 #Head{
-	background-color:#e39780;
-	border-radius: 10px 10px 0px 0px;
+	height: 10%;
 	width: 100%;
-	height: 12%;
-	font-size: 32px;
-	text-align: center;
+	font-size: 18px;
+	
 }
-#FormHeadText{
-	padding-top: 6.5%;
-
+#Menu{
+	height: 100%;
+	width: 100%;
+	border-bottom: 1px solid #3e3e3e;
+	background-color: #1d1d1f;
+	margin: auto;
+}
+#Meni{
+	
+}
+#Meni, ul{
+	-webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+	        animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+  font-family:"SF Pro Text";
+  font-weight: 400;
+}
+#Meni, ul, li{
+	display: inline-block;
+}
+#Meni, ul, li, a{
+	text-decoration: none;
+	color: gray;
+}
+#Meni, a:hover{
+	color:white;
+	-webkit-animation: fade-in-bottom 0.5s ease-in  both;
+	        animation: fade-in-bottom 0.5s ease-in  both;
 }
 #logo{
+	display: inline-block;
+	position:relative;
 	float: left;
-	padding: 10px 10px 0px 10px ;
+	padding: 10px 0px 10px 10px;
+	width: 2%;
+	height: 2%;
 }
-#ClientInfo{
+#BodyA{
+	height: 85%;
 	width: 100%;
-	height: 28%;
-	padding: 15px 20px;
 }
-#ClientInfoT{
-	text-align: left;
-	font-size: 20px;
+#iPhone14Pro{
+	-webkit-animation: fade-in-bottom 1s ease-in both;
+	        animation: fade-in-bottom 1s ease-in both;
+   width:50%;
+   height:50%;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
 }
-.stan{
-	align-content: center;
-	spacing: 10px;
-	font-family: Baskerville;
-	width:210px ;
-	height:30px ;
-	border-radius: 3px;
-	border: 0px solid white;
-	font-size: 15px;
-	text-align: left;
+#iPhone14napis{
+	-webkit-animation: fade-in-bottom 1s ease-in 1s both;
+	        animation: fade-in-bottom 1s ease-in 1s both;
+   width:20%;
+   height:20%;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
 }
-label{
-	spacing: 10px;
-	text-align: left;
-}
-select{
-	font-family: Baskerville;
-	width: 210px;
-	height:30px ;
-	spacing: 10px;
-	border-radius: 3px;
-	border: 0px solid white;
-	font-size: 15px;
-}
-#ac{
-	font-family: Baskerville;
-	spacing: 10px;
-	width:40px ;
-	height:30px ;
-	border-radius: 3px;
-	border: 0px solid white;
-	font-size: 15px;
-}
-#ph{
-	font-family: Baskerville;
-	spacing: 10px;
-	width:155px ;
-	height:30px ;
-	border-radius: 3px;
-	border: 0px solid white;
-	font-size: 15px;
-}
-#row1{
-	display: table-row;
-}
-#row2{
-	display: table-row;
-}
-#row3{
-	display: table-row;
-}
-#row4{
-	display: table-row;
-}
-#row7{
-	display: table-row;
-	margin-left: 10%;
-	spacing: 10px;
-	text-align: left;
-}
-#RoomRentalAndPayment{
-	width: 100%;
-	height: 35%;
-	padding: 15px 20px;
-}
-#roomR{
-	width:63% ;
-}
-#PeopleInfoT{
-	font-size: 16px;
-	text-align: left;
-}
-#row5{
-	display: table-row;
-}
-#row6{
-	display: table-row;
-}
-#CCButton{
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: all .4s ease;
-  
-
-}
-#CCButton:hover{
-	-webkit-filter: grayscale(0%);
-
-}
-#Cash{
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: all .4s ease;
-  padding-bottom: 5px;
-  
-
-}
-#Cash:hover{
-	-webkit-filter: grayscale(0%);
-
-}
-#PayPal{
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: all .4s ease;
-  padding-bottom: 5px;
-  
-}
-#PayPal:hover{
-	-webkit-filter: grayscale(0%);
-}
-#submitButton{
-	font-family: Baskerville;
-	height: 8%;
-	width: 100%;
+#lla{
+	-webkit-animation: fade-in-bottom 1s ease-in 1s both;
+	        animation: fade-in-bottom 1s ease-in 1s both;
 	text-align: center;
+	font-weight: 500;
+	font-size: 72px;
 }
-#Submit{
-	font-family: Baskerville;
-	height: 60%;
-	font-weight: bold;
-	width: 20%;
-	background-color: #EBB6A6;
-	border:1px solid #E39780;
+#frame1{
+
+}
+#frame1,p{
+	-webkit-animation: fade-in-bottom 1s ease-in 2s both;
+	        animation: fade-in-bottom 1s ease-in 2s both;
+	text-align: center;
+	font-size: 28px;
+}
+#frame2{
+	-webkit-animation: fade-in-bottom 1s ease-in 3s both;
+	        animation: fade-in-bottom 1s ease-in 3s both;
+	width:80%;
+	height:40%;
+	background-color: #979797;
+	color: #71797E;
 	border-radius: 10px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+  margin-right: auto;
+}
+#frame3{
+	-webkit-animation: fade-in-bottom 1s ease-in 4s both;
+	        animation: fade-in-bottom 1s ease-in 4s both;
+	width:80%;
+	height:40%;
+	background-color: #979797;
+	color: #71797E;
+	border-radius: 10px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#frame4{
+	-webkit-animation: fade-in-bottom 1s ease-in 5s both;
+	        animation: fade-in-bottom 1s ease-in 5s both;
+	width:80%;
+	height:40%;
+	background-color: #979797;
+	color: #71797E;
+	border-radius: 10px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+#Foot{
+	height: 5%;
+	width: 100%;
+	font-size: 18px;
+	font-weight: normal;
+    text-align: center;
+	border-top: 1px solid #3e3e3e;
 }
