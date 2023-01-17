@@ -68,51 +68,67 @@ body{
 	overflow-y: scroll;
 	font-family: "SF Pro";
 	overflow-x: hidden;
-
 }
 #Head{
-	height: 10%;
+	height: 7%;
 	width: 100%;
-	font-size: 18px;
-	
+	font-weight: 400;
+	font-family:"SF Pro Text";
 }
-#Menu{
-	height: 100%;
+#menua{
+	height: 30%;
 	width: 100%;
-	border-bottom: 1px solid #3e3e3e;
-	background-color: #1d1d1f;
-	margin: auto;
+	background-color: #111112;
 }
-#Meni{
-	
+#menua, ul{
+	left: 65px;
 }
-#Meni, ul{
-	-webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
-	        animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
-  font-family:"SF Pro Text";
-  font-weight: 400;
-  
-}
-#Meni, ul, li{
+#menua, ul,li{
 	display: inline-block;
-	padding-left: 10px;
+	list-style-type: none;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: center;
 }
-#Meni, ul, li, a{
+#menua, ul,li,a{
 	text-decoration: none;
-	color: gray;
+	color:#CECECE;
+	font-size: 12px;
+	font-style: normal;
 }
-#Meni, a:hover{
-	color:white;
-	-webkit-animation: fade-in-bottom 0.5s ease-in  both;
-	        animation: fade-in-bottom 0.5s ease-in  both;
+#menua, ul,li,a:hover{
+	color: white;
 }
 #logo{
 	display: inline-block;
-	float: left;
-	padding-top: 10px;
-	padding-left: 20px;
-	width: 2.5%;
-	height: 5%;
+ 	position: absolute;
+ 	left: 50px;
+	padding-top: 15px;
+	width: 2%;
+	height: 4%;
+}
+#menub{
+	height: 70%;
+	width: 80%;
+	display: block;
+	border-bottom: 1px solid #3D3D3D;
+	backdrop-filter: saturate(180%) blur(20px);
+}
+#menub, ul{
+	
+}
+#menub, ul,li{
+	display: inline-block;
+	list-style-type: none;
+}
+#menub, ul,li,a{
+	text-decoration: none;
+	color:#CECECE;
+	font-size: 17px;
+	font-weight: 400;
+}
+#menub, ul,li,a:hover{
+	color: white;
 }
 #BodyA{
 	height: 85%;
@@ -168,13 +184,13 @@ body{
 #selfieBody{
 	-webkit-animation: fade-in-bottom 1s ease-in 3s both;
 	      animation: fade-in-bottom 1s ease-in 3s both;
-	border: 1px solid white;
+	
 }
 .pSelfiePic{
     
 }
 .cSelfieText{
-	transform: translate(10%, -245%);
+	transform: translate(5%, -245%);
 	font-size: 48px;
 	font-weight: 500;
 }
