@@ -1,0 +1,188 @@
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+html{
+
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	width: 100%;
+	height: 250%;
+	color:#CECECE;
+	overflow-y: scroll;
+	font-family: "SF Pro";
+	overflow-x: hidden;
+
+}
+#Head{
+	height: 10%;
+	width: 100%;
+	font-size: 18px;
+	
+}
+#Menu{
+	height: 100%;
+	width: 100%;
+	border-bottom: 1px solid #3e3e3e;
+	background-color: #1d1d1f;
+	margin: auto;
+}
+#Meni{
+	
+}
+#Meni, ul{
+	-webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+	        animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+  font-family:"SF Pro Text";
+  font-weight: 400;
+  
+}
+#Meni, ul, li{
+	display: inline-block;
+	padding-left: 10px;
+}
+#Meni, ul, li, a{
+	text-decoration: none;
+	color: gray;
+}
+#Meni, a:hover{
+	color:white;
+	-webkit-animation: fade-in-bottom 0.5s ease-in  both;
+	        animation: fade-in-bottom 0.5s ease-in  both;
+}
+#logo{
+	display: inline-block;
+	float: left;
+	padding-top: 10px;
+	padding-left: 20px;
+	width: 2.5%;
+	height: 5%;
+}
+#BodyA{
+	height: 85%;
+	width: 100%;
+}
+#iPhone14Pro{
+	-webkit-animation: fade-in-bottom 1s ease-in both;
+	        animation: fade-in-bottom 1s ease-in both;
+   width:50%;
+   height:50%;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+#iPhone14napis{
+	-webkit-animation: fade-in-bottom 1s ease-in 1s both;
+	        animation: fade-in-bottom 1s ease-in 1s both;
+   width:20%;
+   height:20%;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+.outerText{
+	-webkit-animation: fade-in-bottom 1s ease-in 2s both;
+	        animation: fade-in-bottom 1s ease-in 2s both;
+	 font-weight: 500;
+	font-size: 38px; 
+	margin-left: 20px;
+}
+#lla{
+	-webkit-animation: fade-in-bottom 1s ease-in 1s both;
+	        animation: fade-in-bottom 1s ease-in 1s both;
+	text-align: center;
+	font-weight: 500;
+	font-size: 82px;
+}
+#frame1{
+	-webkit-animation: fade-in-bottom 1s ease-in 2s both;
+	        animation: fade-in-bottom 1s ease-in 2s both;
+}
+#parBody{
+	-webkit-animation: fade-in-bottom 1s ease-in 2s both;
+	      animation: fade-in-bottom 1s ease-in 2s both;
+	margin: 1px;
+  padding: 2px px;
+}
+.childparBody{
+	display: inline-block;
+  padding: 1px 1px;
+  vertical-align: middle;
+}
+#selfieBody{
+	-webkit-animation: fade-in-bottom 1s ease-in 3s both;
+	      animation: fade-in-bottom 1s ease-in 3s both;
+	border: 1px solid white;
+}
+.pSelfiePic{
+    
+}
+.cSelfieText{
+	transform: translate(10%, -245%);
+	font-size: 48px;
+	font-weight: 500;
+}
+#Foot{
+	height: 5%;
+	width: 100%;
+	font-size: 18px;
+	font-weight: normal;
+  text-align: center;
+	border-top: 1px solid #3e3e3e;
+}

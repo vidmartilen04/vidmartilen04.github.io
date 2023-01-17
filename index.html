@@ -7,82 +7,55 @@
 	<link rel="icon" type="image/x-icon" href="img/favicon5.ico">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.2/dist/sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 <body>
   <div id="Head">
   	<div id="Menu">
-  		<img id="logo" src="img/jabuka.png" onclick="introduction()">&nbsp;&nbsp;
-		<script>
-		            function introduction() {
-               Swal.fire({
-                      background: "#696a6e",
-                      font: "SF Pro",
-                      title: 'Apple Bezier',
-                      showClass: {
-                      popup: 'animate__animated animate__backInUp'
-                      },
-                      hideClass: {
-                      popup: 'animate__animated animate__backOutDown'},
-                      text: '© Tilen Vidmar 4. RA',
-					  color:'#898a8f',
-                      icon: 'info',
-                      iconColor:"#898a8f",
-                      confirmButtonText: 'Done',
-                      confirmButtonColor: "#565551",
-                      backdrop: `
-                        hsla(228, 2%, 42%,0.3)
-                      `   
-                })
-            }
-		</script>
+  		<img id="logo" src="img/jabuka.png">&nbsp;&nbsp;
   		<div id="Meni"><ul>
-  			<li><a href="#frame2">Image</a></li>&nbsp;&nbsp;&nbsp;&nbsp; 
-  			<li><a href="#frame3">SVG</a></li>&nbsp;&nbsp;&nbsp;&nbsp; 
+  			<li><a href="#frame2">Image</a></li> 
+  			<li><a href="#frame3">SVG</a></li>
   			<li><a href="#frame3">Bezier</a></li>
   		</ul></div>
   	</div>
   </div>
   <div id="BodyA">
-  	<img id="iPhone14Pro" src="img/iPhone14Pro1.png">
-  	<p id="lla">Think different</p>
-  	<div id="frame1">
-  		<p>At Apple we have created the best way to interact with the images. By using SVG, IMG and Bezier curve</p>
-  	</div><br>
-  	<div id="frame2">
-  		<p>This is how normal image looks like</p>
-  		<canvas id="canvas" width="375" height="750"></canvas>
-  		
-  	</div><br>
-  	<div id="frame3">
-  		<p>This is how SVG image looks like</p>
-  		<canvas id="canvasSVG" width="375" height="750"></canvas>
-  	</div><br>
-  	<div id="frame4">
-  		<p>This is how Bezier curve image looks like</p>
-  		<canvas id="canvasBezier" width="375" height="750">
-		</canvas>
-
-  	</div><br>
+  	<video id="iPhone14Pro" autoplay controls>
+  		<source src="img/vid2.0.mp4" type="video/mp4" width="50%" heigth="50%">
+  	</video>
   	<script>
-		    var canvas = document.getElementById('canvas');
-		    var ctx = canvas.getContext('2d');
-		    var canvasS = document.getElementById('canvasSVG');
-    		var ctxS = canvasS.getContext('2d');
-		    var canvasB = document.getElementById('canvasBezier');
-    		var ctxB = canvasB.getContext('2d');
-
-		    var image = new Image();
-		    image.src = 'img/telefonP.png';
-		    image.onload = function() {
-
-		      ctx.drawImage(image, 0, 0, 375, 750);
-		      ctxS.drawImage(image, 0, 0, 375, 750);
-              ctxB.drawImage(image, 0, 0, 375, 750);
-		    }
-     </script>
+  		var video = document.getElementById("iPhone14Pro");
+      video.onplay = function() {
+      video.controls = false; 
+       };
+  	</script>
+  	<p id="lla">Apple Photography Studio</p>
+  	<div id="frame1">
+  		<p></p>
+  	</div>
+  	<br>
+  	<br>
+  	<div id="parBody">
+  		<div class="childparBody" style="padding-left:20px;"><img src="img/BodyiPhone.jpg" style="padding-left: 10px;"></div>
+  	   <div class="childparBody" style="transform: translate(175%, -245%); font-size: 40px; font-weight: 500;">At Apple we have created<br> 
+  	   	the newest way to interact with<br>
+  	   	the images you create
+  	   </div>
   </div>
+  <br>
+  <br>
+  <p class="outerText">Smile for the future</p>
+  <div id="selfieBody">
+  	  <div class="pSelfiePic"><img src="img/SelfieFuture.jpg" style="width: 98.5%; height: 90%; padding-left:15px;">
+  	  	<div class="cSelfieText">
+  	  		By creating a new image retouching<br>
+  	  		software with an image<br>
+  	  		SVG and Bezier Curve
+  	  </div>
+  	</div>
+    </div>
+    <p class="outerText">Try it out</p>
+  	</div>
   <div id="Foot">
   	Not Apple inc. 
   </div>
