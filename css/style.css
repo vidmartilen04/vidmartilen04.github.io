@@ -104,13 +104,18 @@ body{
  	position: absolute;
  	left: 50px;
 	padding-top: 15px;
-	width: 2%;
-	height: 4%;
+	width: 1.75%;
+	height: 3.75%;
+}
+.wrappedContent{
+	margin: 0 auto;
+	width: 80%;
 }
 #menub{
 	height: 70%;
-	width: 80%;
+	width: 100%;
 	display: block;
+	position: sticky;
 	border-bottom: 1px solid #3D3D3D;
 	backdrop-filter: saturate(180%) blur(20px);
 }
@@ -124,7 +129,7 @@ body{
 #menub, ul,li,a{
 	text-decoration: none;
 	color:#CECECE;
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: 400;
 }
 #menub, ul,li,a:hover{
@@ -137,8 +142,8 @@ body{
 #iPhone14Pro{
 	-webkit-animation: fade-in-bottom 1s ease-in both;
 	        animation: fade-in-bottom 1s ease-in both;
-   width:50%;
-   height:50%;
+   width:70%;
+   height:70%;
    margin-left: auto;
    margin-right: auto;
    display: block;
