@@ -56,7 +56,8 @@
 }
 
 html{
-
+	font-family: "SF Pro",Helvetica;
+	font-weight: 500;
 }
 body{
 	margin: 0;
@@ -66,17 +67,16 @@ body{
 	height: 250%;
 	color:#CECECE;
 	overflow-y: scroll;
-	font-family: "SF Pro";
+	
 	overflow-x: hidden;
 }
 #Head{
 	height: 7%;
 	width: 100%;
 	font-weight: 400;
-	font-family:"SF Pro Text";
 }
 #menua{
-	height: 30%;
+	height: 20%;
 	width: 100%;
 	background-color: #111112;
 }
@@ -89,12 +89,12 @@ body{
 	padding-right: 15px;
 	padding-left: 15px;
 	text-align: center;
+	font-size: 8px;
+	font-style: normal;
 }
 #menua, ul,li,a{
 	text-decoration: none;
 	color:#CECECE;
-	font-size: 12px;
-	font-style: normal;
 }
 #menua, ul,li,a:hover{
 	color: white;
@@ -103,9 +103,9 @@ body{
 	display: inline-block;
  	position: absolute;
  	left: 50px;
-	padding-top: 15px;
+	padding-top: 12.5px;
 	width: 1.75%;
-	height: 3.75%;
+	height: 3.25%;
 }
 .wrappedContent{
 	margin: 0 auto;
@@ -195,10 +195,36 @@ body{
     
 }
 .cSelfieText{
-	transform: translate(5%, -245%);
+	transform: translate(5%, -195%);
 	font-size: 48px;
 	font-weight: 500;
 }
+#imageShow{
+	padding-left:5%;
+	width:20%;
+	height:20%;
+}
+/*#PhoneSelect{
+
+}
+#PhoneSelect, ul{
+	right: 10;
+}
+#PhoneSelect, ul,li{
+	list-style-type: none;
+	display:block;
+	text-align:left;
+	font-size: 18px;
+	font-style: normal;
+	padding: 15px;
+}
+#PhoneSelect, ul,li,a{
+	text-decoration: none;
+	color:#CECECE;
+}
+#PhoneSelect, ul,li,a:hover{
+	color: white;
+}*/
 #Foot{
 	height: 5%;
 	width: 100%;

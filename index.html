@@ -13,14 +13,14 @@
   		<div id="menua">
         <img id="logo" src="img/jabuka.png">
         <ul>
-          <li><a href="">Store</a></li>
-          <li><a href="">iPhone</a></li>          
-          <li><a href="">iPad</a></li>
-          <li><a href="">Mac</a></li>
-          <li><a href="">Watch</a></li>
-          <li><a href="">Airpods</a></li>
-          <li><a href="">TV & Home</a></li>
-          <li><a href="">Accessories</a></li>
+          <li><a href="https://www.apple.com/store" target="_blank">Store</a></li>
+          <li><a href="https://www.apple.com/iphone/" target="_blank">iPhone</a></li>          
+          <li><a href="https://www.apple.com/ipad/" target="_blank">iPad</a></li>
+          <li><a href="https://www.apple.com/mac/" target="_blank">Mac</a></li>
+          <li><a href="https://www.apple.com/watch/" target="_blank">Watch</a></li>
+          <li><a href="https://www.apple.com/airpods/" target="_blank">Airpods</a></li>
+          <li><a href="https://www.apple.com/tv-home/" target="_blank">TV & Home</a></li>
+          <li><a href="https://www.apple.com/shop/accessories/all" target="_blank">Accessories</a></li>
         </ul>
       </div>
     </div>
@@ -50,8 +50,9 @@
   	<br>
   	<br>
   	<div id="parBody">
-  		<div class="childparBody" style="padding-left:20px;"><img src="img/BodyiPhone.jpg" style="padding-left: 10px;"></div>
-  	   <div class="childparBody" style="transform: translate(5%, -10%); font-size: 38px; font-weight: 500;">At Apple we have made<br> 
+  		<div class="childparBody" style="padding-left:20px;"><img src="img/BodyiPhone.jpg" style="padding-left: 10px; width:75%;
+   height:75%;"></div>
+  	   <div class="childparBody" style="transform: translate(180%, -180%); font-size: 38px; font-weight: 500;">At Apple we have made<br> 
   	   	the best iPhone yet.<br>
         Say hello to iPhone 14 Pro! 
   	   </div>
@@ -60,19 +61,62 @@
   <br>
   <p class="outerText">WOW... What a cool camera</p>
   <div id="selfieBody">
-  	  <div class="pSelfiePic"><img src="img/SelfieFuture.jpg" style="width: 98.5%; height: 90%; padding-left:15px;">
+  	  <div class="pSelfiePic"><img src="img/SelfieFuture.jpg" style="width: 175%; height: 90%; padding-left:15px;">
   	  	<div class="cSelfieText">
-  	  		Take selfies and videos with<br>
-  	  		our amazing 12MP TrueDepth<br>
+  	  		Take breathtaking selfies and videos<br>
+  	  		with our amazing 12MP TrueDepth<br>
   	  		camera
   	  </div>
   	</div>
     </div>
-    <p class="outerText">Try it out</p>
-  	</div>
+	<div id="parBody">
+  		<div class="childparBody" style="padding-left:20px;"><img src="img/logotip.svg" style="padding-left: 10px; width:4%; height:4%;"></div>
+  	   <div class="childparBody" style="transform: translate(15%, -95%); font-size: 38px; font-weight: 500;">iPhone 14 Pro comes in 4 stylish colors<br> 
+  	   </div>
   </div>
+  <br>
+	<div id="ColorsOfPhones">
+		<img id="imageShow" src="img/CdeepPurple.jpg">
+			<div id="PhoneSelect">
+			<ul>
+				<li id="Purple" onclick="show()"><a>Deep Purple</a></li>
+				<li id="Gold" onclick="show()"><a>Gold</a></li>
+				<li id="Silver" onclick="show()"><a>Silver</a></li>
+				<li id="Black" onclick="show()"><a>Space Black</a></li>
+			</ul></div>
+		<script>
+        function show() {
+ 			p.src="img/CdeepPurple.png";
+			let p=getElementById('Purple');
+			g.src="img/Cgold.png";
+			let g=getElementById('Gold');
+			s.src="img/Csilver.png";
+			let s=getElementById('Silver');
+			b.src="img/CspaceBlack.png";
+			let b=getElementById('Black');
+            
+            document.getElementById('imageShow')
+                    .style.display = "block";
+ 
+            document.getElementById('Purple')
+                    p.style.display = "block";
+
+			document.getElementById('Gold')
+                    g.style.display = "block";
+
+			document.getElementById('Silver')
+                    s.style.display = "block";
+
+			document.getElementById('Black')
+                    b.style.display = "block";
+        }
+    </script>
+		</div>
+	</div>
+	<br>
+  	</div>
   <div id="Foot">
-  	Not Apple inc. 
+  	designed by Tilen Vidmar 
   </div>
 </body>
 </html>
