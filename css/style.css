@@ -58,6 +58,8 @@
 html{
 	font-family: "SF Pro",Helvetica;
 	font-weight: 500;
+	margin:0;
+	padding: 0;
 }
 body{
 	margin: 0;
@@ -101,11 +103,12 @@ body{
 }
 #logo{
 	display: inline-block;
- 	position: absolute;
- 	left: 50px;
-	padding-top: 12.5px;
-	width: 1.75%;
-	height: 3.25%;
+	position: relative;
+ 	left: -15%;
+ 	top: 2.5px;
+	/*padding-top: 25px;*/
+	width: 1.1%;
+	height: 2.1%;
 }
 .wrappedContent{
 	margin: 0 auto;
@@ -187,9 +190,9 @@ body{
   vertical-align: middle;
 }
 #selfieBody{
-	-webkit-animation: fade-in-bottom 1s ease-in 3s both;
-	      animation: fade-in-bottom 1s ease-in 3s both;
-	
+	/*-webkit-animation: fade-in-bottom 1s ease-in 3s both;
+	      animation: fade-in-bottom 1s ease-in 3s both;*/
+	border-bottom: 2px solid #3D3D3D;
 }
 .pSelfiePic{
     
@@ -199,32 +202,42 @@ body{
 	font-size: 48px;
 	font-weight: 500;
 }
+#ColorsOfPhones{
+	border-bottom: 2px solid #3D3D3D;
+	height: 40%;
+}
 #imageShow{
-	padding-left:5%;
-	width:20%;
-	height:20%;
+	transform: translate(70%, 2%);
+	width:30%;
+	height:30%;
+	position: relative;
 }
-/*#PhoneSelect{
-
+.colorSelect{
+	transform: translate(150%, -160%);
+	width: 30%;
+	margin: auto;
+	padding: 10px;
+	position: absolute;
 }
-#PhoneSelect, ul{
-	right: 10;
+.colorSelect ul{
 }
-#PhoneSelect, ul,li{
+.colorSelect ul li{
 	list-style-type: none;
-	display:block;
-	text-align:left;
-	font-size: 18px;
-	font-style: normal;
-	padding: 15px;
+	display: block;
+	text-align: left;
+	padding: 15px 0px;
 }
-#PhoneSelect, ul,li,a{
+.colorSelect ul li a{
+	font-size: 26px;
+  font-weight: 600;
+  letter-spacing: .011em;
+  font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 	text-decoration: none;
 	color:#CECECE;
 }
-#PhoneSelect, ul,li,a:hover{
+.colorSelect ul li a:hover{
 	color: white;
-}*/
+}
 #Foot{
 	height: 5%;
 	width: 100%;

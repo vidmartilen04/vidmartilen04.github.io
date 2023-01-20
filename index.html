@@ -11,7 +11,7 @@
 <body>
   <div id="Head">
   		<div id="menua">
-        <img id="logo" src="img/jabuka.png">
+        <img id="logo" src="img/logotip.svg">
         <ul>
           <li><a href="https://www.apple.com/store" target="_blank">Store</a></li>
           <li><a href="https://www.apple.com/iphone/" target="_blank">iPhone</a></li>          
@@ -69,51 +69,28 @@
   	  </div>
   	</div>
     </div>
+    <br>
 	<div id="parBody">
-  		<div class="childparBody" style="padding-left:20px;"><img src="img/logotip.svg" style="padding-left: 10px; width:4%; height:4%;"></div>
-  	   <div class="childparBody" style="transform: translate(15%, -95%); font-size: 38px; font-weight: 500;">iPhone 14 Pro comes in 4 stylish colors<br> 
+  		<div class="childparBody" style="padding-left:20px;">
+  			<img src="img/jabuka.png" style="padding-left: 10px; width:40%; height:40%;"></div>
+  	   <div class="childparBody" style="transform: translate(-5%, 5%); font-size: 34px; font-weight: 500;">iPhone 14 Pro comes in 4 stylish colors
   	   </div>
-  </div>
-  <br>
-	<div id="ColorsOfPhones">
-		<img id="imageShow" src="img/CdeepPurple.jpg">
-			<div id="PhoneSelect">
-			<ul>
-				<li id="Purple" onclick="show()"><a>Deep Purple</a></li>
-				<li id="Gold" onclick="show()"><a>Gold</a></li>
-				<li id="Silver" onclick="show()"><a>Silver</a></li>
-				<li id="Black" onclick="show()"><a>Space Black</a></li>
-			</ul></div>
-		<script>
-        function show() {
- 			p.src="img/CdeepPurple.png";
-			let p=getElementById('Purple');
-			g.src="img/Cgold.png";
-			let g=getElementById('Gold');
-			s.src="img/Csilver.png";
-			let s=getElementById('Silver');
-			b.src="img/CspaceBlack.png";
-			let b=getElementById('Black');
-            
-            document.getElementById('imageShow')
-                    .style.display = "block";
- 
-            document.getElementById('Purple')
-                    p.style.display = "block";
-
-			document.getElementById('Gold')
-                    g.style.display = "block";
-
-			document.getElementById('Silver')
-                    s.style.display = "block";
-
-			document.getElementById('Black')
-                    b.style.display = "block";
-        }
-    </script>
+  	 </div>
+  	   	<div id="ColorsOfPhones">
+			    <img id="imageShow" src="img/CdeepPurple.jpg">
+				<div class="colorSelect">
+					<ul>
+						<li><a>Deep Purple</a></li>
+						<li><a>Gold</a></li>
+						<li><a>Silver</a></li>
+						<li><a>Space Black</a></li>
+					</ul>
+				</div>
+				<p style="font-size: 28px; padding-left: 30%; text-align: justify;">Desinged with security in mind,<br>
+				nothing ever leaves your iPhone and<br>
+				stays encrypted on the device.</p>
 		</div>
-	</div>
-	<br>
+  <br>
   	</div>
   <div id="Foot">
   	designed by Tilen Vidmar 
