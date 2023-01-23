@@ -69,8 +69,8 @@ body{
 	height: 250%;
 	color:#CECECE;
 	overflow-y: scroll;
-	
 	overflow-x: hidden;
+	position: relative;
 }
 #Head{
 	height: 7%;
@@ -198,13 +198,13 @@ body{
     
 }
 .cSelfieTexta{
-	transform: translate(15%, -415%);
-	font-size: 48px;
+	transform: translate(15%, -175%);
+	font-size: 34px;
 	font-weight: 500;
 }
 .cSelfieTextb{
 	transform: translate(15%, -25%);
-	font-size: 48px;
+	font-size: 34px;
 	font-weight: 500;
 }
 #ColorsOfPhones{
@@ -243,8 +243,13 @@ body{
 .colorSelect ul li a:hover{
 	color: white;
 }
+#BezierLogo{
+	width: 160px;
+	height: 180px;
+	transform: translate(62.5px, -460px);
+}
 #Foot{
-	height: 5%;
+	height: 10%;
 	width: 100%;
 	font-size: 18px;
 	font-weight: normal;
