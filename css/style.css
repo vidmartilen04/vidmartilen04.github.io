@@ -163,8 +163,8 @@ body{
 .outerText{
 	-webkit-animation: fade-in-bottom 1s ease-in 2s both;
 	        animation: fade-in-bottom 1s ease-in 2s both;
-	 font-weight: 500;
-	font-size: 38px; 
+	 font-weight: 600;
+	font-size: 52px; 
 	margin-left: 20px;
 }
 #lla{
@@ -197,8 +197,13 @@ body{
 .pSelfiePic{
     
 }
-.cSelfieText{
-	transform: translate(5%, -195%);
+.cSelfieTexta{
+	transform: translate(15%, -415%);
+	font-size: 48px;
+	font-weight: 500;
+}
+.cSelfieTextb{
+	transform: translate(15%, -25%);
 	font-size: 48px;
 	font-weight: 500;
 }
@@ -213,7 +218,7 @@ body{
 	position: relative;
 }
 .colorSelect{
-	transform: translate(150%, -160%);
+	transform: translate(150%, -180%);
 	width: 30%;
 	margin: auto;
 	padding: 10px;
@@ -229,7 +234,7 @@ body{
 }
 .colorSelect ul li a{
 	font-size: 26px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: .011em;
   font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 	text-decoration: none;
