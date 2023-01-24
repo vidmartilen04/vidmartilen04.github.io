@@ -161,10 +161,10 @@ body{
    display: block;
 }
 .outerText{
-	-webkit-animation: fade-in-bottom 1s ease-in 2s both;
-	        animation: fade-in-bottom 1s ease-in 2s both;
+	/*-webkit-animation: fade-in-bottom 1s ease-in 2s both;
+	        animation: fade-in-bottom 1s ease-in 2s both;*/
 	 font-weight: 600;
-	font-size: 52px; 
+	font-size: 64px; 
 	margin-left: 20px;
 }
 #lla{
@@ -198,14 +198,16 @@ body{
     
 }
 .cSelfieTexta{
-	transform: translate(15%, -175%);
-	font-size: 34px;
+	transform: translate(185px, -235px);
+	font-size: 36px;
 	font-weight: 500;
 }
 .cSelfieTextb{
-	transform: translate(15%, -25%);
+	transform: translate(295px, -25px);
 	font-size: 34px;
 	font-weight: 500;
+	margin: 0;
+	padding: 0;
 }
 #ColorsOfPhones{
 	border-bottom: 2px solid #3D3D3D;
@@ -218,7 +220,7 @@ body{
 	position: relative;
 }
 .colorSelect{
-	transform: translate(150%, -180%);
+	transform: translate(610px, -580px);
 	width: 30%;
 	margin: auto;
 	padding: 10px;
@@ -245,8 +247,8 @@ body{
 }
 #BezierLogo{
 	width: 160px;
-	height: 180px;
-	transform: translate(62.5px, -460px);
+	height: 165px;
+	transform: translate(125px, -800px);
 }
 #Foot{
 	height: 10%;
