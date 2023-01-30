@@ -91,10 +91,10 @@ body{
 	padding-right: 15px;
 	padding-left: 15px;
 	text-align: center;
-	font-size: 8px;
 	font-style: normal;
 }
 #menua, ul,li,a{
+	font-size: 8px;
 	text-decoration: none;
 	color:#CECECE;
 }
@@ -107,8 +107,8 @@ body{
  	left: -15%;
  	top: 2.5px;
 	/*padding-top: 25px;*/
-	width: 1.1%;
-	height: 2.1%;
+	width: 16px;
+	height: 19px%;
 }
 .wrappedContent{
 	margin: 0 auto;
@@ -161,11 +161,13 @@ body{
    display: block;
 }
 .outerText{
-	/*-webkit-animation: fade-in-bottom 1s ease-in 2s both;
-	        animation: fade-in-bottom 1s ease-in 2s both;*/
-	 font-weight: 600;
-	font-size: 64px; 
-	margin-left: 20px;
+	width: 1024px;  
+	font-size: 60px;
+}
+.textDes{ 
+ font-size: 34px;
+ font-weight: 500;
+ width: 725px;
 }
 #lla{
 	-webkit-animation: fade-in-bottom 1s ease-in 1s both;
@@ -181,8 +183,8 @@ body{
 #parBody{
 	-webkit-animation: fade-in-bottom 1s ease-in 2s both;
 	      animation: fade-in-bottom 1s ease-in 2s both;
-	margin: 1px;
-  padding: 2px px;
+  bottom: -10;
+  border-bottom: 2px solid #3D3D3D;
 }
 .childparBody{
 	display: inline-block;
@@ -190,41 +192,32 @@ body{
   vertical-align: middle;
 }
 #selfieBody{
-	/*-webkit-animation: fade-in-bottom 1s ease-in 3s both;
-	      animation: fade-in-bottom 1s ease-in 3s both;*/
+	-webkit-animation: fade-in-bottom 1s ease-in 3s both;
+	      animation: fade-in-bottom 1s ease-in 3s both;
 	border-bottom: 2px solid #3D3D3D;
 }
 .pSelfiePic{
     
 }
 .cSelfieTexta{
-	transform: translate(185px, -235px);
-	font-size: 36px;
+	font-size: 48px;
 	font-weight: 500;
 }
 .cSelfieTextb{
-	transform: translate(295px, -25px);
 	font-size: 34px;
 	font-weight: 500;
-	margin: 0;
-	padding: 0;
 }
 #ColorsOfPhones{
 	border-bottom: 2px solid #3D3D3D;
-	height: 40%;
+	height: 1400px;
+	width: 100%;
 }
 #imageShow{
-	transform: translate(70%, 2%);
-	width:30%;
-	height:30%;
 	position: relative;
 }
 .colorSelect{
-	transform: translate(610px, -580px);
-	width: 30%;
-	margin: auto;
-	padding: 10px;
-	position: absolute;
+	width: 205px;
+	height: 275px;
 }
 .colorSelect ul{
 }
@@ -248,10 +241,10 @@ body{
 #BezierLogo{
 	width: 160px;
 	height: 165px;
-	transform: translate(125px, -800px);
+	transform: translate(77.5%,-500%)
 }
 #Foot{
-	height: 10%;
+	height: 34px;
 	width: 100%;
 	font-size: 18px;
 	font-weight: normal;

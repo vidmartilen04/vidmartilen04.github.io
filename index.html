@@ -12,15 +12,15 @@
   <div id="Head">
   		<div id="menua">
         <img id="logo" src="img/logotip.svg">
-        <ul>
-          <li><a href="https://www.apple.com/store" target="_blank">Store</a></li>
-          <li><a href="https://www.apple.com/iphone/" target="_blank">iPhone</a></li>          
-          <li><a href="https://www.apple.com/ipad/" target="_blank">iPad</a></li>
-          <li><a href="https://www.apple.com/mac/" target="_blank">Mac</a></li>
-          <li><a href="https://www.apple.com/watch/" target="_blank">Watch</a></li>
-          <li><a href="https://www.apple.com/airpods/" target="_blank">Airpods</a></li>
-          <li><a href="https://www.apple.com/tv-home/" target="_blank">TV & Home</a></li>
-          <li><a href="https://www.apple.com/shop/accessories/all" target="_blank">Accessories</a></li>
+        <ul style="top: 10px;">
+          <li><a href="https://www.apple.com/store" target="_blank" style="font-size:14px;">Store</a></li>
+          <li><a href="https://www.apple.com/iphone/" target="_blank" style="font-size:14px;">iPhone</a></li>          
+          <li><a href="https://www.apple.com/ipad/" target="_blank" style="font-size:14px;">iPad</a></li>
+          <li><a href="https://www.apple.com/mac/" target="_blank" style="font-size:14px;">Mac</a></li>
+          <li><a href="https://www.apple.com/watch/" target="_blank" style="font-size:14px;">Watch</a></li>
+          <li><a href="https://www.apple.com/airpods/" target="_blank" style="font-size:14px;">Airpods</a></li>
+          <li><a href="https://www.apple.com/tv-home/" target="_blank" style="font-size:14px;">TV & Home</a></li>
+          <li><a href="https://www.apple.com/shop/accessories/all" target="_blank" style="font-size:14px;">Accessories</a></li>
         </ul>
       </div>
     </div>
@@ -35,7 +35,7 @@
       </div>
   <div id="BodyA">
   	<video id="iPhone14Pro" autoplay controls>
-  		<source src="img/vid2.0.mp4" type="video/mp4" width="50%" heigth="50%">
+  		<source src="img/vid2.0.mp4" type="video/mp4" width="1024px" height="1080px">
   	</video>
   	<script>
   		var video = document.getElementById("iPhone14Pro");
@@ -49,29 +49,29 @@
   	</div>
   	<br>
   	<br>
-  	<div id="parBody">
-  		<div class="childparBody" style="padding-left:20px;"><img src="img/BodyiPhone.jpg" style="padding-left: 10px; width:75%;
-   height:75%;"></div>
-  	   <div class="childparBody" style="transform: translate(180%, -180%); font-size: 38px; font-weight: 500;">At Apple we have made<br> 
+  	<div id="parBody" style="width: 100%;">
+  		<div><img src="img/BodyiPhone.jpg" style=" padding-left: 10px; width:60%; height:60%;"></div>
+  	   <div class="textDes" style="transform: translate(250%,-240%); text-align:right; width: 400px; grid-row:1; grid-column: 1/2;">
+  	   	At Apple we have made<br> 
   	   	the best iPhone yet.<br>
         Say hello to iPhone 14 Pro! 
   	   </div>
   </div>
   <br>
   <br>
-  <p class="outerText">Smile for the innovation</p>
+  <div class="outerText">Smile for the innovation</div>
   <div id="selfieBody">
-  	  <div class="pSelfiePic"><img src="img/SelfieFuture.jpg" style="width: 175%; height: 90%; padding-left:15px;"></div>
-  	  	<div class="cSelfieTexta">
+  	  <div class="pSelfiePic"><img src="img/SelfieFuture.jpg" style="width: 150%; height: 100%; padding-left:15px;"></div>
+  	  	<div class="textDes" style="transform:translate(20%,-180%);">
   	  		Take breathtaking selfies and videos<br>
   	  		with our amazing 12MP TrueDepth<br>
   	  		camera.<br>
   	  		Create great memories with the best<br>
   	  		portrait selfies on a smartphone.<br>
   	  </div>
-  	  <div class="outerText" style="transform: translate(0px, -30px); font-size: 60px;"><p>More detailed photos with main camera</p>
+  	  <div class="outerText" style="transform: translate(0%, -100%);">More detailed photos with main camera
   	</div>
-	    <div class="cSelfieTextb">
+	    <div class="textDes" style="transform:translate(20%,0%);">
   	  The main 3 camera setup offers <br>
 			you 48MP main camera for stunning<br>
 			and more detiled photos. 12MP Telephoto<br> 
@@ -82,47 +82,40 @@
 	  <div class="pSelfiePic"><img src="img/snapshot.jpg" style="width: 100%; height: 100%; padding-top:-10px;"></div>
 	</div>
     <br>
-	  <div id="parBody">
-  		<div class="childparBody" style="padding-left:20px;"><img src="img/jabuka.png" style="padding-left: 10px; width:48px; height:50px;"></div>
-  	   <div class="outerText" style="transform: translate(100px, -58px); font-size:48px;">iPhone 14 Pro comes in 4 stylish colors</div>
-  	   </div>
-  	   <br>
   	   	<div id="ColorsOfPhones">
-			    <img id="imageShow" src="img/CdeepPurple.jpg">
-				<div class="colorSelect">
+  	   		<div style="display: inline-block; height:60px;"><img src="img/jabuka.png" style="width:58px; height:58px;"><div style="display: inline-block; font-size: 58px; height:100%; padding-left: 10px; top: ;">iPhone 14 Pro comes in 4 stylish colors</div></div>
+  	      <br>
+  	      <br>
+  	   		<img id="imageShow" src="img/CdeepPurple.jpg">
+  	   		<div class="colorSelect" style="transform:translate(400%,-250%);">
 					<ul>
-						<li><a>Deep Purple</a></li>
-						<li><a>Gold</a></li>
-						<li><a>Silver</a></li>
-						<li><a>Space Black</a></li>
+						<li><a id="DeepP" onclick="document.getElementById('imageShow').src='img/CdeepPurple.jpg';">Deep Purple</a></li>
+						<li><a id="Gold" onclick="document.getElementById('imageShow').src='img/Cgold.jpg';">Gold</a></li>
+						<li><a id="Silver" onclick="document.getElementById('imageShow').src='img/Csilver.jpg';">Silver</a></li>
+						<li><a id="Black" onclick="document.getElementById('imageShow').src='img/CspaceBlack.jpg';">Space Black</a></li>
 					</ul>
-					<script>
-						//Color select photos thingy
-					</script>
+					
 				</div>
 				<br>
-				<p style="font-size: 28px; padding-left: 30%; text-align: justify;">Designed for durability.<br><br>
+				<div class="textDes" style="transform:translate(50%,-125%);">Designed for durability.<br><br>
 				Made from stainless steel frame<br>
 				reinforced glass back and ceramic shield<br>
-				display. 6.1" and 6.7" display sizes</p>
-				<br>
+				display. 6.1" and 6.7" display sizes
+				</div>
 		</div>
 	</div>
   <br>
-  	<div id="cc" style="margin-top:0%; margin-left: 0;">
-  		<br>
-  		<img src="img/telefonB.png" style="padding-left: 10px;">
-  		<div style="font-size: 28px; padding-left: 30%; text-align: right; transform: translate(-10%, -440%);">
+    <div style="height:2130px; width: 100%;">
+    	<img src="img/telefonB.png" style="padding-left: 10px;">
+  		<div class="textDes" style=" width:550px; text-align:right; transform: translate(120%,-500%);">
   			Desinged with security in mind,<br>
 				nothing ever leaves your iPhone and<br>
 				stays encrypted on the device.
-				<br>
-				<br>
 			  </div>
-			  <div class="outerText" style=" text-align:right; width:600px; font-size:50px; height:50px; transform: translate(405px, -590px);">
+			  <div style="text-align:right; width:550px; font-size:50px; height:50px; transform: translate(120%, -1050%);">
   			The safest iPhone EVER!
 			  </div>
-			  <div style="font-size: 28px; padding-left: 30%; text-align: right; transform: translate(-10%, -410%);">
+			  <div class="textDes" style="text-align: right; width:550px; transform: translate(120%, -300%);">
   			By redesigning iPhones Gyroscope<br>
   			your iPhone can detect a severe car<br>
   			crash, than call 911 and notify<br>
@@ -150,17 +143,16 @@
 					  	ctx.fill();
 				  </script>
 			</canvas>
-  	</div>  		
-  	<div class="outerText" style="transform: translate(30px,-400px); width: 600px;">Buy your iPhone 14</div>
-  				<ul style="padding-left: 10%; transform: translate(0%,-180%);">
+  				<div><div class="outerText" style="transform: translate(20%,-500%); width: 550px;">Buy your iPhone 14</div>
+  				<ul style="transform: translate(30%,-150%); width:450px; height:;">
   					<li style="display: block; text-align: left; padding: 15px 0px 0px 0px; font-size: 32px; font-weight: 400; color:#CECECE;">iPhone 14 from 799$</li>
   					<li style="display: block; text-align: left; padding: 15px 0px 0px 0px; font-size: 32px; font-weight: 400; color:#CECECE;">iPhone 14 Plus from 899$</li>
   					<li style="display: block; text-align: left; padding: 15px 0px 0px 0px; font-size: 32px; font-weight: 400; color:#CECECE;">iPhone 14 Pro from 999$</li>
   					<li style="display: block; text-align: left; padding: 15px 0px 0px 0px; font-size: 32px; font-weight: 400; color:#CECECE;">iPhone 14 Pro Max from 1099$</li>
-  				</ul>
-  				
+  				</ul><img src="img/largeGphoto.jpg" style="transform:translate(-1%,-30%); width:105%;"></div>
+    </div>
+  		<br>
   </div>
-	</div>
   <div id="Foot">
   	designed by Tilen Vidmar 
   </div>
