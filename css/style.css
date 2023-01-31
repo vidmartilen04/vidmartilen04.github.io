@@ -56,7 +56,7 @@
 }
 
 html{
-	font-family: "SF Pro",Helvetica;
+	font-family: Helvetica;
 	font-weight: 500;
 	margin:0;
 	padding: 0;
@@ -106,7 +106,6 @@ body{
 	position: relative;
  	left: -15%;
  	top: 2.5px;
-	/*padding-top: 25px;*/
 	width: 16px;
 	height: 19px%;
 }
@@ -231,7 +230,7 @@ body{
 	font-size: 26px;
   font-weight: 400;
   letter-spacing: .011em;
-  font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family:Helvetica;
 	text-decoration: none;
 	color:#CECECE;
 }
