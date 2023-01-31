@@ -160,7 +160,9 @@ body{
    display: block;
 }
 .outerText{
-	width: 1024px;  
+	-webkit-animation: fade-in-bottom 1s ease-in 2.5s both;
+	animation: fade-in-bottom 1s ease-in 2.5s both;
+	width: 1100px;  
 	font-size: 60px;
 }
 .textDes{ 
