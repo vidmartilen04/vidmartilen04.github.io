@@ -34,14 +34,13 @@
         </ul>
       </div>
   <div id="BodyA">
-  	<video id="iPhone14Pro" autoplay controls>
+  	<video id="iPhone14Pro" autoplay muted controls>
   		<source src="img/vid2.0.mp4" type="video/mp4" width="1024px" height="1080px">
   	</video>
   	<script>
-  		var video = document.getElementById("iPhone14Pro");
-      video.onplay = function() {
-      video.controls = false; 
-       };
+  		document.getElementById("iPhone14Pro").play;
+  		document.getElementById("iPhone14Pro").controls = false; 
+       
   	</script>
   	<p id="lla">Say hello to iPhone</p>
   	<div id="frame1">
